@@ -35,7 +35,7 @@ public class GreetingResource {
     // end::extract[]
 
     // tag::lock[]
-    @LOCK // <1>
+    @LOCK // <1>/
     @Produces(MediaType.TEXT_PLAIN)
     @Path("{id}")
     public String lockResource(@PathParam("id") long id) {
